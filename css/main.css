@@ -1,0 +1,74 @@
+body {
+    font-family: 'Major Mono Display', monospace;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    color: black;
+}
+
+.about-me {
+    padding: 20px;
+}
+
+.name {
+    position: fixed;
+    margin: 35% auto;
+    font-size: 4vw;
+    grid-column: 1 / span 1;
+    grid-row: 1/span 1;
+}
+
+.paragraph {
+    z-index: 1000;
+    background-color: white;
+    margin-top: 100vh;
+    grid-column: 2 / span 1;
+}
+
+.social-icons {
+    z-index: 1000;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 15em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and ( max-width:650px ) {
+    .wrapper {
+        display: block;
+        width: 100vw;
+        margin: 3% auto;
+        color: black;
+    }
+
+    .name {
+        z-index: 0;
+        position: fixed;
+        margin: 27vh auto;
+        font-size: 7.5vw;
+    }
+
+    .paragraph {
+        z-index: 1000;
+        background-color: white;
+        margin-top: 100vh;
+        grid-column: 2 / span 1;
+        grid-row: row;
+    }
+    
+    .social-icons {
+        z-index: 1000;
+        background-color: white;
+        margin: 1.325em auto 0;
+        max-width: 15em;
+        display: flex;
+        justify-content: space-between;
+    }
+}
