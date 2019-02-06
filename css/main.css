@@ -8,7 +8,6 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     color: black;
 }
 
@@ -18,10 +17,13 @@ body {
 
 .name {
     position: fixed;
-    margin: 35% auto;
-    font-size: 4vw;
+    top: 30%;
+    left:5%;
+    height:10%;
+    width: 50%;
+    font-size: 3.5vw;
     grid-column: 1 / span 1;
-    grid-row: 1/span 1;
+    line-height: 80%;
 }
 
 .paragraph {
